@@ -4,8 +4,11 @@ var router = express.Router();
 //app.use('/', indexRouter);
 
 /* GET home page. */
+// router.get('/', function (req, res, next) {
+// 	res.render('Index/Login', { layout: 'page_layout/Login_layout' });
+// });
 router.get('/', function (req, res, next) {
-	res.render('Index/Login', { layout: 'page_layout/Login_layout' });
+	res.render('Index/home', { layout: 'page_layout/Resume_layout' });
 });
 
 router.get('/home', function (req, res, next) {
